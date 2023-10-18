@@ -5,7 +5,7 @@ import Transaction from "./components/Transaction";
 import TransactionList from "./components/TransactionList";
 import { Provider } from "./components/context"
 
-const App = ({saldoInicial,setSaldoInicial,saldoFinal}) => {
+const App = ({saldoInicial,setSaldoInicial}) => {
 
   return (
     <Provider>
@@ -17,7 +17,6 @@ const App = ({saldoInicial,setSaldoInicial,saldoFinal}) => {
                 <Header className="text-4xl font-bold"
                   saldoInicial={saldoInicial}
                   setSaldoInicial={setSaldoInicial}
-                  saldoFinal={saldoFinal}
                 />
                 </div>
                 <InEx/>

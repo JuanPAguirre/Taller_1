@@ -18,11 +18,11 @@ const InEx = () => {
   return (
     <>
         <div className="flex jsutify-between my-2">
-            <h4>Inicial: </h4>
+            <h4>Ingresos: </h4>
             <p>{income}</p>
         </div>
         <div className="flex jsutify-between my-2">
-            <h4>Final: </h4>
+            <h4>Gastos: </h4>
             <p>{expense}</p>
         </div>
     </>

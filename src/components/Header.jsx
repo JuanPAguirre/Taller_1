@@ -11,13 +11,8 @@ const Header = () => {
          <input 
               name="Inicial" 
               value={saldoInicial} 
+              className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
               onChange={(e) => setSaldoInicial(e.target.value)}
-          />
-         Saldo final:
-          <input 
-              name="Final" 
-              value={saldoFinal} 
-              readOnly
           />
       </>
     )
