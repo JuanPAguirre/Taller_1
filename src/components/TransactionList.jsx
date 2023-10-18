@@ -3,6 +3,8 @@ import TransactionItem from "./TransactionItem"
 
 const TransactionList = () => {
     const {transactions} = useGlobal()
+    
+
 
   return (
     <>

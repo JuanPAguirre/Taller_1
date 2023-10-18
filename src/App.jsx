@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Transaction from "./components/Transaction";
 import TransactionList from "./components/TransactionList";
 import { Provider } from "./components/context"
-import { useState } from "react";
 
 const App = () => {
 

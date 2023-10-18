@@ -6,7 +6,7 @@ const Transaction = () => {
     const {addTransaction} = useGlobal()
     const[tipo,setTipo] = useState(" ");
     const [nombre, setNombre] = useState()
-    const [cantidad, setCantidad] = useState(0)
+    const [cantidad, setCantidad] = useState()
 
     const submit = (e)=> {
         e.preventDefault();
