@@ -10,7 +10,7 @@ const TransactionItem = ({transaction}) => {
         <div>
         <span>${transaction.cantidad}</span>
         <button className="px-3 font-bold" onClick={(e)=>{delTransaction(transaction.id)}}> X </button>
-        <button type="submit" className="px-3 font-bold" onClick={(e)=>{editTransaction(transaction.id)}}> E </button>
+        <button type="submit" className="px-3 font-bold" onClick={(e)=>{editTransaction(transaction)}}> E </button>
         </div>
     </li>
   );

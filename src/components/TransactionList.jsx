@@ -6,7 +6,7 @@ const TransactionList = () => {
 
   return (
     <>
-    <h2 className="text-slate-300 text-xl font-bold w-full">Lista de movimientos</h2>
+    <h2 className="text-slate-300 text-2xl font-bold w-full">Lista de movimientos</h2>
         <ul>
             {transactions.map(transaction =>(
             <TransactionItem transaction={transaction}

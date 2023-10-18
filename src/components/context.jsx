@@ -39,10 +39,10 @@ export const Provider = ({children}) => {
             payload: id
         })
     
-    const editTransaction = (id) => 
+    const editTransaction = (transaction) => 
         dispatch({
             type: "EDIT_TRANSACTION",
-            payload: id
+            payload: transaction
         })
     
 
