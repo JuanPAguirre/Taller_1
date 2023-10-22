@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {useGlobal} from "./context"
 
 const Balance = () => {
@@ -6,7 +6,7 @@ const Balance = () => {
     const [initial, setInitial] = useState(0);
     const {transactions} = useGlobal();
     const valores = transactions.map(transactions => transactions.cantidad)
-    const total = valores.reduce((acc, item) =>(acc += item),initial)
+    const total = valores.reduce((acc, item) => (acc += item), initial);
 
   return (
     <>
@@ -21,8 +21,7 @@ const Balance = () => {
         </h1>
     </div>
     <div className="flex justify-between">
-        <h1 className="text-2cl font-bold">Saldo final: ${total}</h1>
-        
+        <h1 className="text-2cl font-bold">Saldo final:${total} </h1>
     </div>
     </>
   )

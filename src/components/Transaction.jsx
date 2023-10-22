@@ -9,13 +9,22 @@ const Transaction = () => {
     const [cantidad, setCantidad] = useState()
 
     const submit = (e)=> {
-        e.preventDefault();
+        e.preventDefault(); 
+        if (tipo === "ingreso"){
         addTransaction({
             id:uuid4(),
             nombre,
             cantidad: + cantidad,
-        });
-        setNombre("");
+            tipo,
+        })}else{
+            addTransaction({
+                id:uuid4(),
+                nombre,
+                cantidad: - cantidad,
+                tipo,
+        })
+        };
+        setNombre(" ");
         setCantidad(0);
     }
      
@@ -23,7 +32,9 @@ const Transaction = () => {
     <div>
         <form onSubmit={submit}> 
             Tipo: <select className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full" 
-            value={tipo} onChange={(e)=>setTipo(e.target.value)}>
+                onChange={(e)=>setTipo(e.target.value)} 
+                value={tipo}>
+            <option></option>
             <option name="ingreso" value="ingreso">Ingreso</option>
             <option name="gasto" value="gasto">Gasto</option>
             </select>

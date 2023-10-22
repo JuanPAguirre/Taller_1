@@ -12,7 +12,7 @@ const InEx = () => {
 
   const expense = valores
                   .filter(item => item < 0)
-                  .reduce((acc, item) => (acc += item), 0)* -1
+                  .reduce((acc, item) => (acc += item), 0)
                   .toFixed(2);
 
   return (
@@ -23,7 +23,7 @@ const InEx = () => {
         </div>
         <div className="flex jsutify-between my-2">
             <h4>Gastos: </h4>
-            <p>{expense}</p>
+            <p>{expense *-1}</p>
         </div>
     </>
   )
