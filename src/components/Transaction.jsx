@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useGlobal } from "./context"
 import uuid4 from "uuid4"
 
+
 const Transaction = () => {
     const {addTransaction} = useGlobal()
     const[tipo,setTipo] = useState(" ");

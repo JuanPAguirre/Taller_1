@@ -21,7 +21,7 @@ const Balance = () => {
         </h1>
     </div>
     <div className="flex justify-between">
-        <h1 className="text-2cl font-bold">Saldo final:${total} </h1>
+        <h1 className="text-2cl font-bold">Saldo final:${total}</h1>
     </div>
     </>
   )
